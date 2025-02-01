@@ -1,12 +1,16 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class BancoImpl implements Banco {
 
-    public BancoImpl() {
+    private String name;
+    private UUID bankId;
+
+    public BancoImpl(String name) {
+        this.name = name;
+        this.bankId = UUID.randomUUID();
     }
-
-
 
     @Override
     public ContaBancaria criarConta() {
