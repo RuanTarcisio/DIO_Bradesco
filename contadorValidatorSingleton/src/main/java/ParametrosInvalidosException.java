@@ -1,5 +1,3 @@
-package pack;
-
 public class ParametrosInvalidosException extends RuntimeException{
 
 

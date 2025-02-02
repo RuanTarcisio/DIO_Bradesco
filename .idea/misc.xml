@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/account_Bank/pom.xml" />
+        <option value="$PROJECT_DIR$/account/pom.xml" />
+        <option value="$PROJECT_DIR$/contadorValidatorSingleton/pom.xml" />
+        <option value="$PROJECT_DIR$/sudoku/pom.xml" />
       </list>
     </option>
   </component>

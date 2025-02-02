@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="account_Bank" />
+        <module name="teste" />
+        <module name="account" />
+        <module name="contadorValidatorSingleton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account_Bank" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

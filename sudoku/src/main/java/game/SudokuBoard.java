@@ -1,9 +1,11 @@
-package pack;
+package game;
 
-class SudokuBoard {
+import static game.CellConstants.*;
+
+public class SudokuBoard {
     private final Cell[][] board;
 
-    public SudokuBoard(int[][] initialValues, boolean[][] visibility) {
+    public SudokuBoard(int[][] initialValues, String[][] visibility) {
         board = new Cell[9][9];
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
@@ -30,7 +32,7 @@ class SudokuBoard {
     public boolean isComplete() {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-                if (!board[i][j].isVisible) {
+                if (board[i][j].status.equals(EMPTY)){
                     return false;
                 }
             }
@@ -40,9 +42,9 @@ class SudokuBoard {
 
     public boolean addNumber(int row, int col, int value) {
         if (validateNumber(row, col, value)) {
-            if (!board[row][col].isVisible) {
+            if (board[row][col].status.equals(EMPTY)) {
                 board[row][col].value = value;
-                board[row][col].isVisible = true;
+                board[row][col].status = FILLED;
                 return true;
             }
         }
@@ -50,8 +52,8 @@ class SudokuBoard {
     }
 
     public boolean removeNumber(int row, int col) {
-        if (board[row][col].isVisible) {
-            board[row][col].isVisible = false;
+        if (!board[row][col].status.equals(EMPTY)) {
+            board[row][col].status = EMPTY;
             return true;
         }
         return false;

@@ -1,12 +1,11 @@
-package pack;
+package game;
 
-
-class SudokuGameManager {
+public class SudokuGameManager {
     private SudokuBoard currentBoard;
     private final int[][] initialValues;
-    private final boolean[][] initialVisibility;
+    private final String[][] initialVisibility;
 
-    public SudokuGameManager(int[][] initialValues, boolean[][] visibility) {
+    public SudokuGameManager(int[][] initialValues, String[][] visibility) {
         this.initialValues = initialValues;
         this.initialVisibility = visibility;
         startNewGame();
@@ -29,10 +28,10 @@ class SudokuGameManager {
     }
 
     public boolean addNumber(int row, int col, int value) {
-        return currentBoard.addNumber(row, col, value);
+        return currentBoard.addNumber(row-1, col-1, value);
     }
 
     public boolean removeNumber(int row, int col) {
-        return currentBoard.removeNumber(row, col);
+        return currentBoard.removeNumber(row-1, col-1);
     }
 }

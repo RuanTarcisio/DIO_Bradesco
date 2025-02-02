@@ -1,5 +1,3 @@
-package pack;
-
 public class ContadorSingleton {
     private static ContadorSingleton instancia;
 

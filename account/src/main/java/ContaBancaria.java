@@ -1,5 +1,3 @@
-package pack;
-
 public class ContaBancaria {
     private String nomeTitular;
     private int numeroConta;
