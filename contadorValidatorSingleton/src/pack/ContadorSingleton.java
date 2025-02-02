@@ -1,3 +1,5 @@
+package pack;
+
 public class ContadorSingleton {
     private static ContadorSingleton instancia;
 
@@ -12,7 +14,7 @@ public class ContadorSingleton {
     }
 
 
-    public static void contar(int parametro1, int parametro2)throws ParametrosInvalidosException{
+    public static void contar(int parametro1, int parametro2)throws ParametrosInvalidosException {
 
         if(parametro1 > parametro2){
             throw new ParametrosInvalidosException("1º parâmetro maior que o 2ª");
