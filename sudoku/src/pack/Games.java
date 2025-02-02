@@ -72,7 +72,6 @@ public class Games {
         });
 
 
-
         gamesHashMap.put(1, game1);
         gamesHashMap.put(2, game2);
 
@@ -82,8 +81,8 @@ public class Games {
         return gamesHashMap;
     }
 
-    public Game getGame(int value){
-        if(value > gamesHashMap.size()) {
+    public Game getGame(int value) {
+        if (value > gamesHashMap.size()) {
             System.err.println("Invalid");
             throw new RuntimeException();
         }
