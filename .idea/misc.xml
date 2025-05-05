@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/account/pom.xml" />
         <option value="$PROJECT_DIR$/contadorValidatorSingleton/pom.xml" />
         <option value="$PROJECT_DIR$/sudoku/pom.xml" />
+        <option value="$PROJECT_DIR$/bank/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
